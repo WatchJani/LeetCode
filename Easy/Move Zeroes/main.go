@@ -37,13 +37,13 @@ func moveZeroes(nums []int) {
 		nums[left] = nums[i]
 		left++
 	}
+	//Obavezno koristiti u buducnosti
 	for ; left < len(nums); left++ {
 		nums[left] = 0
 	}
 }
 
 func main() {
-
 	my_Array := []int{0, 0, 1}
 
 	moveZeroes(my_Array)
